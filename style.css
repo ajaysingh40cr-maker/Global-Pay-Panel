@@ -104,3 +104,23 @@ body{
   border-radius:10px;
   margin-bottom:10px;
 }
+.transactions{
+  background:#1e293b;
+  padding:20px;
+  border-radius:15px;
+  margin-top:20px;
+}
+
+.transactions h2{
+  color:#8b5cf6;
+  margin-bottom:15px;
+}
+
+.tx{
+  display:flex;
+  justify-content:space-between;
+  background:#0f172a;
+  padding:12px;
+  border-radius:10px;
+  margin-bottom:10px;
+}
