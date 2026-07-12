@@ -124,3 +124,38 @@ body{
   border-radius:10px;
   margin-bottom:10px;
 }
+.profile-card{
+  background:#1e293b;
+  border-radius:15px;
+  padding:20px;
+  margin-top:20px;
+  text-align:center;
+}
+
+.avatar{
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background:#8b5cf6;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0 auto 15px;
+  font-size:28px;
+  font-weight:bold;
+}
+
+.profile-info{
+  display:flex;
+  justify-content:space-around;
+  margin-top:20px;
+}
+
+.profile-info span{
+  color:#94a3b8;
+  display:block;
+}
+
+.profile-info strong{
+  color:#22c55e;
+}
