@@ -69,3 +69,38 @@ body{
 .card h2{
   color:#22c55e;
 }
+.welcome-card{
+  background:linear-gradient(135deg,#6d28d9,#8b5cf6);
+  padding:20px;
+  border-radius:15px;
+  margin:20px 0;
+}
+
+.welcome-card h2{
+  margin:0;
+  color:#fff;
+}
+
+.welcome-card p{
+  margin-top:8px;
+  color:#e5e7eb;
+}
+
+.setup{
+  background:#1e293b;
+  padding:20px;
+  border-radius:15px;
+  margin-top:20px;
+}
+
+.setup h2{
+  color:#8b5cf6;
+  margin-bottom:15px;
+}
+
+.step{
+  background:#0f172a;
+  padding:12px;
+  border-radius:10px;
+  margin-bottom:10px;
+}
