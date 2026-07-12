@@ -179,3 +179,34 @@ body{
   font-size:22px;
   cursor:pointer;
   }
+.quick-actions{
+  background:#1e293b;
+  padding:20px;
+  border-radius:15px;
+  margin-top:20px;
+}
+
+.quick-actions h2{
+  margin-bottom:15px;
+  color:#8b5cf6;
+}
+
+.action-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:15px;
+}
+
+.action-btn{
+  background:#8b5cf6;
+  color:white;
+  text-decoration:none;
+  text-align:center;
+  padding:15px;
+  border-radius:10px;
+  transition:.3s;
+}
+
+.action-btn:hover{
+  background:#6d28d9;
+  }
