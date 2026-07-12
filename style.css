@@ -159,3 +159,23 @@ body{
 .profile-info strong{
   color:#22c55e;
 }
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#1e293b;
+  padding:15px 20px;
+  border-radius:15px;
+  margin-bottom:20px;
+}
+
+.topbar h2{
+  color:#ffffff;
+}
+
+.top-icons{
+  display:flex;
+  gap:15px;
+  font-size:22px;
+  cursor:pointer;
+  }
