@@ -102,3 +102,17 @@ font-size:16px;
 margin-top:10px;
 cursor:pointer;
 }
+.support-btn{
+    background:#3b82f6;
+    color:#fff;
+    border:none;
+    padding:10px 18px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+}
+
+.support-btn:hover{
+    background:#2563eb;
+}
