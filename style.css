@@ -68,3 +68,37 @@ body{
 .download button:hover{
   background:#6d28d9;
 }
+.form-box{
+background:#1e293b;
+margin-top:25px;
+padding:20px;
+border-radius:18px;
+}
+
+.form-box h2{
+color:#8b5cf6;
+margin-bottom:20px;
+}
+
+.form-box input{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+border:none;
+border-radius:12px;
+background:#0f172a;
+color:white;
+}
+
+.main-btn,
+.google-btn{
+width:100%;
+padding:14px;
+border:none;
+border-radius:12px;
+background:linear-gradient(90deg,#7c3aed,#38bdf8);
+color:white;
+font-size:16px;
+margin-top:10px;
+cursor:pointer;
+}
