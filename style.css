@@ -7,265 +7,86 @@
 
 body{
   background:#0f172a;
-  color:#fff;
   display:flex;
-}
-
-.sidebar{
-  width:250px;
+  justify-content:center;
+  align-items:center;
   min-height:100vh;
-  background:#111827;
-  padding:20px;
 }
 
-.sidebar h2{
-  color:#8b5cf6;
-  margin-bottom:30px;
+.auth-container{
+  width:360px;
+  background:#1e293b;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
 }
 
-.sidebar a{
-  display:block;
-  color:#fff;
-  text-decoration:none;
-  padding:12px;
-  margin-bottom:10px;
-  border-radius:10px;
-}
-
-.sidebar a:hover{
-  background:#8b5cf6;
-}
-
-.main{
-  flex:1;
-  padding:20px;
-}
-
-.header{
+.logo{
+  text-align:center;
   margin-bottom:25px;
 }
 
-.header h1{
+.logo h1{
   color:#8b5cf6;
 }
 
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
-}
-
-.card{
-  background:#1e293b;
-  padding:20px;
-  border-radius:15px;
-}
-
-.card h3{
-  color:#94a3b8;
-  margin-bottom:10px;
-}
-
-.card h2{
-  color:#22c55e;
-}
-.welcome-card{
-  background:linear-gradient(135deg,#6d28d9,#8b5cf6);
-  padding:20px;
-  border-radius:15px;
-  margin:20px 0;
-}
-
-.welcome-card h2{
-  margin:0;
-  color:#fff;
-}
-
-.welcome-card p{
+.logo p{
+  color:#cbd5e1;
   margin-top:8px;
-  color:#e5e7eb;
 }
 
-.setup{
-  background:#1e293b;
-  padding:20px;
-  border-radius:15px;
-  margin-top:20px;
-}
-
-.setup h2{
-  color:#8b5cf6;
-  margin-bottom:15px;
-}
-
-.step{
-  background:#0f172a;
-  padding:12px;
-  border-radius:10px;
-  margin-bottom:10px;
-}
-.transactions{
-  background:#1e293b;
-  padding:20px;
-  border-radius:15px;
-  margin-top:20px;
-}
-
-.transactions h2{
-  color:#8b5cf6;
-  margin-bottom:15px;
-}
-
-.tx{
+.tabs{
   display:flex;
-  justify-content:space-between;
-  background:#0f172a;
-  padding:12px;
-  border-radius:10px;
-  margin-bottom:10px;
-}
-.profile-card{
-  background:#1e293b;
-  border-radius:15px;
-  padding:20px;
-  margin-top:20px;
-  text-align:center;
-}
-
-.avatar{
-  width:70px;
-  height:70px;
-  border-radius:50%;
-  background:#8b5cf6;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin:0 auto 15px;
-  font-size:28px;
-  font-weight:bold;
-}
-
-.profile-info{
-  display:flex;
-  justify-content:space-around;
-  margin-top:20px;
-}
-
-.profile-info span{
-  color:#94a3b8;
-  display:block;
-}
-
-.profile-info strong{
-  color:#22c55e;
-}
-.topbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  background:#1e293b;
-  padding:15px 20px;
-  border-radius:15px;
+  gap:10px;
   margin-bottom:20px;
 }
 
-.topbar h2{
-  color:#ffffff;
-}
-
-.top-icons{
-  display:flex;
-  gap:15px;
-  font-size:22px;
+.tabs button{
+  flex:1;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:#334155;
+  color:#fff;
   cursor:pointer;
-  }
-.quick-actions{
-  background:#1e293b;
-  padding:20px;
-  border-radius:15px;
-  margin-top:20px;
 }
 
-.quick-actions h2{
+.tabs button:hover{
+  background:#8b5cf6;
+}
+
+.login-box h2{
+  color:#fff;
   margin-bottom:15px;
-  color:#8b5cf6;
 }
 
-.action-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-  gap:15px;
+.login-box input{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border:none;
+  border-radius:10px;
+  background:#334155;
+  color:#fff;
 }
 
-.action-btn{
+.main-btn{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:10px;
   background:#8b5cf6;
   color:white;
-  text-decoration:none;
-  text-align:center;
-  padding:15px;
-  border-radius:10px;
-  transition:.3s;
+  font-size:16px;
+  cursor:pointer;
 }
 
-.action-btn:hover{
+.main-btn:hover{
   background:#6d28d9;
-  }
-.analytics{
-  background:#1e293b;
-  padding:20px;
-  border-radius:15px;
-  margin-top:20px;
 }
 
-.analytics h2{
-  color:#8b5cf6;
-  margin-bottom:15px;
+.login-box p{
+  text-align:center;
+  color:#cbd5e1;
+  margin-top:15px;
 }
-
-.progress-item{
-  margin-bottom:15px;
-}
-
-.progress-item span{
-  display:block;
-  margin-bottom:8px;
-}
-
-.progress-bar{
-  width:100%;
-  height:10px;
-  background:#0f172a;
-  border-radius:20px;
-  overflow:hidden;
-}
-
-.progress-fill{
-  height:100%;
-  background:#22c55e;
-  border-radius:20px;
-  }
-.activity{
-  background:#1e293b;
-  padding:20px;
-  border-radius:15px;
-  margin-top:20px;
-}
-
-.activity h2{
-  color:#8b5cf6;
-  margin-bottom:15px;
-}
-
-.activity-item{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  background:#0f172a;
-  padding:12px;
-  border-radius:10px;
-  margin-bottom:10px;
-}
-
-.activity-item small{
-  color:#94a3b8;
-  }
