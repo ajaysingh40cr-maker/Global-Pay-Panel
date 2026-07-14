@@ -38,3 +38,15 @@ loginBtn.addEventListener("click", () => {
   loginBtn.classList.add("active");
   registerBtn.classList.remove("active");
 });
+document.getElementById("googleLoginBtn").addEventListener("click", async () => {
+  try {
+    const result = await signInWithPopup(auth, provider);
+
+    alert("Welcome " + (result.user.displayName || result.user.email));
+
+    window.location.href = "dashboard.html";
+
+  } catch (error) {
+    alert("Google Login Failed: " + error.message);
+  }
+});
