@@ -1,3 +1,1 @@
-document.addEventListener("DOMContentLoaded", function () {
-  console.log("Global Pay Panel Loaded");
-});
+console.log("Global Pay Panel Loaded");
