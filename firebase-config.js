@@ -1,6 +1,7 @@
 const firebaseConfig = {
   apiKey: "AIzaSyCL8vjtmJtSIJvax22qaRb3as2UPvmcVEE",
   authDomain: "global-pay-panel.firebaseapp.com",
+  databaseURL: "https://global-pay-panel-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "global-pay-panel",
   storageBucket: "global-pay-panel.firebasestorage.app",
   messagingSenderId: "50490595463",
