@@ -69,15 +69,18 @@ if (!userId) {
   return;
 }
 
-await set(ref(db, "users/" + userId), {
-  balance: balance,
-  commission: commission,
-  transactions: transactions
-});
+try {
+  await set(ref(db, "users/" + userId), {
+    balance: balance,
+    commission: commission,
+    transactions: transactions
+  });
 
-alert("Data Saved Successfully");
-
-});
+  alert("Data Saved Successfully");
+} catch (e) {
+  alert("Firebase Error: " + e.message);
+  console.error(e);
+}
   </script>
 </body>
 </html>
