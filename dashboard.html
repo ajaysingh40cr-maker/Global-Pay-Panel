@@ -30,18 +30,47 @@
 
 <div class="card">
     <h2>💰 Total Balance</h2>
-    <h3>₹0.00</h3>
+    <h3 id="balance">₹0.00</h3>
 </div>
 
 <div class="card">
     <h2>💸 Total Commission</h2>
-    <h3>₹0.00</h3>
+    <h3 id="commission">₹0.00</h3>
 </div>
 
 <div class="card">
     <h2>📊 Total Transactions</h2>
-    <h3>0</h3>
+    <h3 id="transactions">0</h3>
 </div>
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 
+const firebaseConfig = {
+  apiKey: "AIzaSyCL8vjtmJtSIJvax22qaRb3as2UPvmcVEE",
+  authDomain: "global-pay-panel.firebaseapp.com",
+  databaseURL: "https://global-pay-panel-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "global-pay-panel",
+  storageBucket: "global-pay-panel.firebasestorage.app",
+  messagingSenderId: "50490595463",
+  appId: "1:50490595463:web:69457a3db6634522b3c022",
+  measurementId: "G-ENPBE84IZT"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+
+// Demo user. Baad me isse logged-in user ki UID se replace karenge.
+const userId = "demo";
+
+onValue(ref(db, "users/" + userId), (snapshot) => {
+  const data = snapshot.val();
+  if (!data) return;
+
+  document.getElementById("balance").innerText = "₹" + (data.balance || 0);
+  document.getElementById("commission").innerText = "₹" + (data.commission || 0);
+  document.getElementById("transactions").innerText = data.transactions || 0;
+});
+</script>
 </body>
 </html>
