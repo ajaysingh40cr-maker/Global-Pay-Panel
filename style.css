@@ -175,3 +175,72 @@ body{
     font-size:28px;
     color:#22c55e;
 }
+.tabs{
+display:flex;
+background:#1e293b;
+border-radius:12px;
+overflow:hidden;
+margin:20px 0;
+}
+
+.tabs button{
+flex:1;
+padding:14px;
+border:none;
+background:#334155;
+color:#fff;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.tabs button.active{
+background:linear-gradient(90deg,#7c3aed,#38bdf8);
+}
+
+#registerForm,
+#loginForm{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+margin-top:15px;
+}
+
+#registerForm h2,
+#loginForm h2{
+margin-bottom:20px;
+color:#8b5cf6;
+}
+
+#registerForm input,
+#loginForm input{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+border:none;
+border-radius:10px;
+background:#0f172a;
+color:#fff;
+font-size:15px;
+}
+
+#loginForm p{
+margin:10px 0;
+text-align:right;
+color:#8b5cf6;
+cursor:pointer;
+}
+
+.main-btn,
+.google-btn{
+width:100%;
+padding:14px;
+margin-top:10px;
+border:none;
+border-radius:10px;
+background:linear-gradient(90deg,#7c3aed,#38bdf8);
+color:#fff;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+      }
